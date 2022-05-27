@@ -1,0 +1,73 @@
+html,body {
+    background-color: #e2eaf5;
+    max-width : 800px;
+    min-height: 500px;
+    margin:0 auto;
+    
+}
+
+table {
+    background-color: #e2eaf5;
+    border : 2px solid gray;
+
+}
+
+td {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+label{
+    color : #413e3e;
+    font-weight : bold;
+    display : inline-block;
+    width : 180px;
+    font-family :'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+h1{
+    font-family :'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color :rgb(3,9,83);
+}
+
+hr {
+    border: 1px solid gray;
+    border-radius: 1px;
+  }
+
+.btn2 {
+    background-color: rgb(3, 9, 83);
+    color :mintcream;
+    width: 170px;
+    height: 35px;
+    font-weight : bold;
+    font-size: 16px;
+}
+.btn1{
+    background-color: rgb(3, 9, 83);
+    color :mintcream;
+    font-weight : bold;
+    font-size: 16px;
+}
+
+
+.K_running_time{
+    color: rgb(143, 59, 27);
+    font-weight : bold;
+    font-size : 18px
+    
+}
+
+
+.P_running_time{
+    color: rgb(143, 59, 27);
+    font-weight : bold;
+    font-size : 18px
+}
+
+.RT_diff{
+    color: rgb(143, 59, 27);
+    font-weight : bold;
+    font-size : 18px
+}

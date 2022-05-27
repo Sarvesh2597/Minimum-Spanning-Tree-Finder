@@ -1,0 +1,70 @@
+Input for graph data for testing the algorithms using the front end.
+
+
+1. Input - 1 
+
+Num of nodes : 4
+Num of edges : 6
+Edges :
+0,1,4
+0,2,6
+1,3,6
+1,2,5
+2,3,7
+3,2,8
+
+2. Input -2
+Num of nodes : 5
+Num of edges : 7
+Edges :
+0,1,15
+0,2,20
+1,2,13
+1,3,5
+2,4,6
+2,3,10
+3,4,8
+
+3. Input - 3
+Num of nodes : 5
+Num of edges : 8
+4,1,4
+4,3,2
+1,0,3
+3,1,1
+3,2,1
+0,2,6
+0,3,3
+2,3,2
+
+4. Input -4
+Num of nodes : 6
+Num of edges : 8
+Edges :
+0,1,4
+0,2,4
+1,2,2
+2,3,3
+2,4,2
+2,5,4
+3,5,3
+4,5,3
+
+5. Input - 5
+Num of nodes : 9
+Num of edges : 14
+0, 1, 4
+0, 2, 7
+1, 2, 11
+1, 3, 9
+1, 5, 20
+2, 5, 1
+3, 6, 6
+3, 4, 2
+4, 6, 10
+4, 8, 15
+4, 7, 5
+4, 5, 1
+5, 7, 3
+6, 8, 5
+7, 8, 12

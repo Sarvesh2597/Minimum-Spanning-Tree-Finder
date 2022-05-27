@@ -1,0 +1,97 @@
+<!--
+This is the index.html page which presents a GUI to user for entering the directed or undirected Graph data structure.
+User can select the MST algorithms to run by selecting the checkboxes. The resultant MST along with the time taken 
+for running each algorithm is shown on the page.
+Author : Sarvesh Rembhotkar
+UTA ID: 1001966297
+Date : 10-Apr-2022
+-->
+
+<html lang=eng>
+    <head>
+        <title>Test MST Algorithms</title>
+        <link href="..\style1.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Minimum Spanning Tree (MST) Finder</h1>
+        <table>
+            <tr>
+                <td><label for="nodenum">Enter No. of Nodes :</label></td>
+                <td><input type="text" id="nodenum" name="nodenum"></td>
+                <td><label for="edgenum">Enter No. of Edges :</label></td>
+                <td><input type="text" id="edgenum" name="edgenum"></td>
+            </tr>
+            <tr>
+                <td><label for="node1">Node 1 :</label></td>
+                <td><input type="text" id="node1" name="node1"></td>
+                <td><label for="node2">Node 2 :</label></td>
+                <td><input type="text" id="node2" name="node2"></td>
+            </tr>
+            <tr>
+                <td><label for="weight">Weight :</label></td>
+                <td><input type="text" id="weight" name="weight"></td>
+                <td><button class="btn1" onclick="addEdge()">Add Edge</button></td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td><textarea style="font-weight: bold;" rows="15" cols="21" id = "edges" name="edges"></textarea></td>
+            </tr>
+            
+            <tr>
+                <td rowspan = 2><label>Select MST Algorithms</label></td>
+                <td><input style="margin-top: 6%" type="checkbox" id="kruskal" name="kruskal" value="Y">
+                    <label for="kruskal"> Kruskal's algorithm</label><br> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input style="margin-top: 6%" type="checkbox" id="prims" name="prims" value="Y">
+                    <label for="prims"> Prim's algorithm</label><br>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr><td>&nbsp;</td>
+                <td><button class="btn2" onclick="run()">Run Algorithm</button></td>
+            </tr>
+            <tr><td colspan=4><hr></td></tr>
+            <tr>
+                <td><label for = "kruskal_output">Kruskal's MST</label></td>
+                <td><textarea style="font-weight: bold;"rows="5" cols="21" id = "kruskal_output" name="kruskal_output"></textarea></td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td><label>Kruskal's algorithm run time in seconds</label></td>
+                <td><div class="K_running_time"></div></td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td><label for = "prims_output">Prim's MST</label></td>
+                <td><textarea style="font-weight: bold;" rows="5" cols="21" id = "prims_output" name="prims_output"></textarea></td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td><label>Prim's algorithm run time in seconds</label></td>
+                <td><div class="P_running_time"> </div></td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td><label>Runtime difference (Kruskal - Prim):</label></td>
+                <td> <div class="RT_diff"> </div></td>
+            </tr>
+        </table>
+ 
+        <script type="text/javascript" src="../eel.js"></script>
+        <script src="./script.js"></script>
+    </body>
+</html>
